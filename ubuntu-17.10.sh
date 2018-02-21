@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Upgrade
+sudo apt update && sudo apt upgrade
+
+# Enable Canonical Partner repositories
+# https://itsfoss.com/things-installing-ubuntu-17-10/
+
+# Install media codecs
+sudo apt-get install ubuntu-restricted-extras
+
 # Add aliases
 alias search=grep
 alias cls=clear
@@ -20,3 +29,14 @@ git config --global user.email "rustymgreen@gmail.com"
 curl -fsSL get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker $USER
+
+# Install tweak tool
+sudo apt install gnome-tweak-tool
+
+# Better terminal
+sudo add-apt-repository ppa:elementary-os/daily
+sudo apt-get update
+sudo apt-get install pantheon-terminal
+
+# Install VLC
+sudo snap install vlc
