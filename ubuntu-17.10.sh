@@ -25,10 +25,13 @@ git config --global user.email "rustymgreen@gmail.com"
 
 # Install Docker
 # https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-convenience-script
-# NOTE: Not for production system.
-curl -fsSL get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo usermod -aG docker $USER
+sudo snap install docker
+sudo snap connect docker:home
+sudo addgroup --system docker
+sudo adduser $USER docker
+newgrp docker
+sudo snap disable docker
+sudo snap enable docker
 
 # Install tweak tool
 sudo apt install gnome-tweak-tool
