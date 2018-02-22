@@ -33,6 +33,9 @@ sudo usermod -aG docker $USER
 # Install tweak tool
 sudo apt install gnome-tweak-tool
 
+# Gnome OSX theme
+# https://www.gnome-look.org/p/1171688/
+
 # Paper theme
 sudo add-apt-repository ppa:snwh/pulp
 sudo apt-get update
