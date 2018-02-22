@@ -61,3 +61,7 @@ sudo apt-get update && sudo apt-get install yarn
 
 # Install VLC
 sudo snap install vlc
+
+# QGIS
+sudo apt update
+sudo apt install qgis
