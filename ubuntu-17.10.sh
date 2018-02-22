@@ -33,6 +33,11 @@ sudo usermod -aG docker $USER
 # Install tweak tool
 sudo apt install gnome-tweak-tool
 
+# Paper theme
+sudo add-apt-repository ppa:snwh/pulp
+sudo apt-get update
+sudo apt-get install paper-*-theme
+
 # Better terminal
 sudo add-apt-repository ppa:elementary-os/daily
 sudo apt-get update
