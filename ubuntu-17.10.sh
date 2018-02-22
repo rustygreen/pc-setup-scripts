@@ -38,6 +38,11 @@ sudo add-apt-repository ppa:snwh/pulp
 sudo apt-get update
 sudo apt-get install paper-*-theme
 
+# Install Numix theme
+sudo add-apt-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-gtk-theme numix-icon-theme-circle
+
 # Better terminal
 sudo add-apt-repository ppa:elementary-os/daily
 sudo apt-get update
