@@ -16,6 +16,10 @@ alias cls=clear
 # Install CURL
 sudo apt install curl
 
+# Fix 17.10 issues
+# No right click > new file
+cd ~/Templates && touch Text\ File.txt
+
 # Install GIT
 # https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-16-04
 sudo apt-get update
